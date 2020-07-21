@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{1531C773-80E0-4A07-A09B-E47CADF40FBF}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="VisualGDBPackageDefinitions">
+    <ToolchainID>com.sysprogs.toolchain.default-gcc</ToolchainID>
+  </PropertyGroup>
+  <ImportGroup Label="VisualGDBFindComponents">
+    <Import Project="$(LOCALAPPDATA)\VisualGDB\FindComponents.props" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0000\include\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0000\include\arm-linux-gnueabihf\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0000\include\c++\6\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0002\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0000\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)DIO560v1-Debug.vgdbsettings</NMakeOutput>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0000\include\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0000\include\arm-linux-gnueabihf\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0000\include\c++\6\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0002\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0000\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.100.172\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)DIO560v1-Release.vgdbsettings</NMakeOutput>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="DIOAPI\CAN.h" />
+    <ClInclude Include="DIOAPI\Common.h" />
+    <ClInclude Include="DIOAPI\Config.h" />
+    <ClInclude Include="DIOAPI\Definitions.h" />
+    <ClInclude Include="DIOAPI\DIO550.h" />
+    <ClInclude Include="DIOAPI\GeneralFunctions.h" />
+    <ClInclude Include="DIOAPI\Hardware.h" />
+    <ClInclude Include="DIOAPI\HART.h" />
+    <ClInclude Include="DIOAPI\LCPC.h" />
+    <ClInclude Include="DIOAPI\lib.h" />
+    <ClInclude Include="DIOAPI\terminal.h" />
+    <ClInclude Include="DIOAPI\WDManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="DIO560v1.c" />
+    <ClCompile Include="DIOAPI\CAN.c" />
+    <ClCompile Include="DIOAPI\DIO550.c" />
+    <ClCompile Include="DIOAPI\GeneralFunctions.c" />
+    <ClCompile Include="DIOAPI\HART.c" />
+    <ClCompile Include="DIOAPI\HART_PHY.c" />
+    <ClCompile Include="DIOAPI\LCPC.c" />
+    <ClCompile Include="DIOAPI\lib.c" />
+    <ClCompile Include="DIOAPI\WDManager.c" />
+    <None Include="Makefile" />
+    <None Include="debug.mak" />
+    <None Include="release.mak" />
+    <None Include="DIO560v1-Debug.vgdbsettings" />
+    <None Include="DIO560v1-Release.vgdbsettings" />
+  </ItemGroup>
+</Project>

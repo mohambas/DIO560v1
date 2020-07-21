@@ -1,0 +1,19 @@
+﻿  VisualGDB: Run "make  CONFIG=Debug clean" in directory "/home/VisualGDB/d/Application/CM3_DIO/DIO560v1/DIO560v1" on root@192.168.137.4 (SSH)
+  rm -rf Debug
+EXEC : warning : Stderr line received 'tar: DIOAPI/CAN.c: time stamp 2020-07-21 03:33:19 is 38.046831873 s in the future'
+EXEC : VisualGDB warning : The target's clock might be out-of-sync with this computer's clock. Use the Tools->VisualGDB->SSH Host Manager->Host-wide Settings to configure the timestamp offset.
+  VisualGDB: D:\Application\CM3_DIO\DIO560v1\DIO560v1 => /home/VisualGDB/d/Application/CM3_DIO/DIO560v1/DIO560v1: 39 files copied (596KB).
+  VisualGDB: Run "make  CONFIG=Debug" in directory "/home/VisualGDB/d/Application/CM3_DIO/DIO560v1/DIO560v1" on root@192.168.137.4 (SSH)
+  mkdir Debug
+  gcc -std=gnu11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c DIO560v1.c -o Debug/DIO560v1.o -MD -MF Debug/DIO560v1.dep
+make : warning : File 'DIOAPI/CAN.c' has modification time 37 s in the future
+  gcc -std=gnu11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c DIOAPI/CAN.c -o Debug/CAN.o -MD -MF Debug/CAN.dep
+  gcc -std=gnu11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c DIOAPI/DIO550.c -o Debug/DIO550.o -MD -MF Debug/DIO550.dep
+  gcc -std=gnu11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c DIOAPI/GeneralFunctions.c -o Debug/GeneralFunctions.o -MD -MF Debug/GeneralFunctions.dep
+  gcc -std=gnu11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c DIOAPI/HART.c -o Debug/HART.o -MD -MF Debug/HART.dep
+  gcc -std=gnu11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c DIOAPI/HART_PHY.c -o Debug/HART_PHY.o -MD -MF Debug/HART_PHY.dep
+  gcc -std=gnu11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c DIOAPI/LCPC.c -o Debug/LCPC.o -MD -MF Debug/LCPC.dep
+  gcc -std=gnu11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c DIOAPI/lib.c -o Debug/lib.o -MD -MF Debug/lib.dep
+  gcc -std=gnu11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c DIOAPI/WDManager.c -o Debug/WDManager.o -MD -MF Debug/WDManager.dep
+  g++ -o Debug/DIO560v1 -Wl,-gc-sections    -Wl,--start-group Debug/DIO560v1.o Debug/CAN.o Debug/DIO550.o Debug/GeneralFunctions.o Debug/HART.o Debug/HART_PHY.o Debug/LCPC.o Debug/lib.o Debug/WDManager.o -lwiringPi -lpthread  -Wl,--rpath='$ORIGIN'   -Wl,--end-group
+make : warning : Clock skew detected.  Your build may be incomplete.

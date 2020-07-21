@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{80c30893-f015-4471-a155-6a896a172c56}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{98dc973c-60e4-44fd-9644-c2e7229c983b}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{c9f17cb4-521d-459a-a041-efe9b1fd26bf}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{d680edaf-9e25-4d84-9fde-c11ae81f0bda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{21815cc7-f0a3-43d4-bc4d-5027065cdfde}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DIO560v1.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="DIO560v1-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="DIO560v1-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="DIOAPI\WDManager.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="DIOAPI\DIO550.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="DIOAPI\GeneralFunctions.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="DIOAPI\LCPC.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="DIOAPI\CAN.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="DIOAPI\lib.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="DIOAPI\HART.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="DIOAPI\HART_PHY.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DIOAPI\Common.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIOAPI\Config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIOAPI\WDManager.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIOAPI\terminal.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIOAPI\DIO550.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIOAPI\Hardware.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIOAPI\GeneralFunctions.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIOAPI\Definitions.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIOAPI\LCPC.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIOAPI\CAN.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIOAPI\lib.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="DIOAPI\HART.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
